@@ -7,6 +7,7 @@ import org.springframework.data.elasticsearch.repository.config.EnableElasticsea
 import sandbox.repositories.MeasureConfig;
 
 @SpringBootApplication
+// TODO Centralize
 @EnableElasticsearchRepositories(basePackages = "sandbox/repositories")
 @Import(MeasureConfig.class)
 public class IngestorWorkerApplication {
